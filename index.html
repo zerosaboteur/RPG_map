@@ -70,8 +70,8 @@
 
 					// Basic options for our map
 					var myOptions = {
-						center: new google.maps.LatLng(0, 0),
-						zoom: 2,
+						center: new google.maps.LatLng(-20, -65),
+						zoom: 5,
 						minZoom: 0,
 						streetViewControl: false,
 						mapTypeControl: false,
@@ -85,6 +85,38 @@
 					map.mapTypes.set('custom', customMapType);
 					map.setMapTypeId('custom');
 
+                    //prototyp markera
+                    //var markerImage = 'files/crosshair.png';
+                    var markerSolaris = new google.maps.Marker({
+                    position: new google.maps.LatLng(-14, -68),
+                    map: map,
+                    title: 'Solaris'
+                    //icon: markerImage
+                    });
+                    
+                    var markerWiezaNadzieji = new google.maps.Marker({
+                    position: new google.maps.LatLng(-15, -65),
+                    map: map,
+                    title: 'Wieża Nadzieji'
+                    });
+                    
+                    var markerWallowdale = new google.maps.Marker({
+                    position: new google.maps.LatLng(-9, -60),
+                    map: map,
+                    title: 'Wallowdale'
+                    });
+                    
+                    var markerTrego = new google.maps.Marker({
+                    position: new google.maps.LatLng(-4, -62),
+                    map: map,
+                    title: 'Trego'
+                    });
+                    
+                    var markerBurnslay = new google.maps.Marker({
+                    position: new google.maps.LatLng(-2, -66),
+                    map: map,
+                    title: 'Burnslay'
+                    });
 				}
 		</script>
 
